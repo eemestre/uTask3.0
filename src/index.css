@@ -1,16 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,700,900');
 
-:root {
+body {
+  margin: 0px;
+  padding: 0px;
   font-family: "Poppins";
   background-color: #FAFAFA;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-body {
-  margin: 0px;
 }
 
 #root {
@@ -21,12 +19,10 @@ body {
   justify-content: center;
 }
 
-header {
-  width: 100%;
-  height: 60px;
-  background-color: #226ED8;
-  z-index: 100;
-  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 2px 7px 0 rgba(0, 0, 0, 0.19);
+.prevent-select {
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .box {
@@ -70,129 +66,8 @@ header {
   z-index: 100;
 }
 
-.text-input {
-  width: 100%;
-  height: 40px;
-  border-radius: 8px;
-  border: 2px solid #002D6C;
-  background-color: #EEF5FF;
-  font-size: 18px;
-  transition-duration: 0.6s;
-}
-
-input[type="text"], input[type="password"] {
-  width: 100%;
-  height: 100%;
-  border: 0px transparent;
-  background-color: transparent;
-  font-size: 15px;
-  font-family: inherit;
-} input[type=text]:focus, input[type="password"]:focus {
-  outline: none;
-}
-
-.img-home {
-  width: 80%;
-  aspect-ratio: 542/582;
-  margin-top: 70px;
-}
-
-.half {
-  width: 50%;
-}
-
-.title-uTask {
-  color: #226ED8;
-  font-size: 3.2em;
-  margin: 0px;
-  margin-top: 50px;
-}
-
-.crie-uma-conta {
-  width: 100%;
-  font-family: inherit;
-  margin-bottom: 0px;
-  margin-top: 40px;
-}
-
-.linha1 {
-  border: 2px solid #9CC7FBB2;
-  height: 30vw;
-  border-radius: 2px;
-  margin-top: 0px;
-  margin-bottom: 0px;
-}
-
-.linha2 {
-  border: 1px solid #3B5F91;
-  width: 90%;
-  border-radius: 2px;
-  margin-top: -20px;
-  margin-bottom: 40px;
-}
-
-.nao-tem-cadastro {
-  font-family: inherit;
-  font-size: 15px;
-  color: #00122B;
-  text-decoration: underline;
-  cursor: pointer;
-}
-
-.text-div {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  justify-content: center;
-  margin-top: 20px;
-}
-
 label {
   font-size: 18px;
-}
-
-.left {
-  width: 90%;
-  height: auto;
-}
-
-.right {
-  width: 10%;
-  height: auto;
-}
-
-.btn-eye {
-  cursor: pointer;
-  background-color: transparent;
-  outline: none;
-  border: 0px;
-  transition-duration: .2s;
-}
-
-#esqueceu-senha {
-  margin-top: 2px;
-  font-size: 12px;
-  color: #226ED8;
-  text-decoration: underline;
-  cursor: pointer;
-}
-
-#btn1 {
-  width: 100%;
-  height: 50px;
-  background-color: #226ED8;
-  border-radius: 30px;
-  border-width: 0px;
-  margin-top: 40px;
-  margin-bottom: 60px;
-  font-size: 20px;
-  font-family: inherit;
-  color: #FAFAFA;
-  cursor: pointer;
-  transition-duration: .4s;
-}#btn1:hover {
-  background-color: #226ED8AA;
 }
 
 /*button {

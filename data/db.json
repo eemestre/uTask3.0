@@ -1,0 +1,55 @@
+{
+  "cadastros": [
+    {
+      "id": "d9bb",
+      "nome": "eemestre",
+      "email": "eduardomestreg@gmail.com",
+      "senha": "temppwd",
+      "darkMode": true,
+      "tasks": [
+        {
+          "id": 0,
+          "title": "A fazer!",
+          "descr": "A task mais legal e importante de todas! B)",
+          "status": "todo"
+        },
+        {
+          "id": 1,
+          "title": "Fazendo!",
+          "descr": "A task mais legal e importante de todas! B)",
+          "status": "doing"
+        },
+        {
+          "id": 2,
+          "title": "Feito!",
+          "descr": "A task mais legal e importante de todas! B)",
+          "status": "done"
+        },
+        {
+          "id": 3,
+          "title": "A fazer!",
+          "descr": "A task mais legal e importante de todas! B)",
+          "status": "todo"
+        },
+        {
+          "id": 4,
+          "title": "A fazer!",
+          "descr": "A task mais legal e importante de todas! B)",
+          "status": "todo"
+        },
+        {
+          "id": 5,
+          "title": "A fazer!",
+          "descr": "A task mais legal e importante de todas! B)",
+          "status": "todo"
+        },
+        {
+          "id": 6,
+          "title": "A fazer!",
+          "descr": "A task mais legal e importante de todas! B)",
+          "status": "todo"
+        }
+      ]
+    }
+  ]
+}

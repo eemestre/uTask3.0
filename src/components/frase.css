@@ -1,0 +1,30 @@
+.frase-container {
+    width: 60%;
+    height: 150px;
+    box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.1), 0 1px 10px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+
+.dark-text {
+    color: #FAFAFA;
+}
+
+.light-text {
+    color: #141414;
+}
+
+.frase-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.bulb {
+    width: 40px;
+}

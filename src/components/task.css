@@ -1,0 +1,165 @@
+.task-light {
+    width: 90%;
+    min-height: 120px;
+    background-color: #FFFFFF;
+    color: #141414;
+    border-radius: 20px;
+    box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.1), 0 1px 10px 0 rgba(0, 0, 0, 0.1);
+    margin-bottom: 25px;
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.task-dark {
+    width: 90%;
+    min-height: 120px;
+    background-color: #3D3D3D;
+    color: #FAFAFA;
+    border-radius: 20px;
+    box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.1), 0 1px 10px 0 rgba(0, 0, 0, 0.1);
+    margin-bottom: 25px;
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+
+.task-title {
+    font-size: 28px;
+    margin-top: 20px;
+}
+
+.task-text {
+    font-size: 20px;
+    margin-top: 8px;
+    margin-bottom: 15px;
+}
+
+.task-left {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+}
+
+.task-right {
+    width: 10%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: space-between;
+}
+
+#btn-options {
+    padding: 0px;
+    margin: 0px;
+    margin-top: 25px;
+    margin-right: 12px;
+    cursor: pointer;
+    outline: none;
+    border: 0px;
+    background-color: transparent;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.btn-extend {
+    color: inherit;
+    font-size: 20px;
+    padding: 0px;
+    margin: 0px;
+    cursor: pointer;
+    outline: none;
+    border: 0px;
+    background-color: transparent;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.options-img {
+    width: 7px;
+    transition-duration: .2s;
+}
+
+.btn-next {
+    padding: 0px;
+    margin: 0px;
+    margin-left: 4px;
+    cursor: pointer;
+    outline: none;
+    border: 0px;
+    background-color: transparent;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    transition-duration: .2s;
+}.btn-next:hover {
+    transform: translateY(-0.25em);
+}
+
+.btn-previous {
+    padding: 0px;
+    margin: 0px;
+    margin-right: 4px;
+    cursor: pointer;
+    outline: none;
+    border: 0px;
+    background-color: transparent;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    transition-duration: .2s;
+}.btn-previous:hover {
+    transform: translateY(-0.25em);
+}
+
+.btn-restart {
+    padding: 0px;
+    margin: 0px;
+    margin-right: 4px;
+    cursor: pointer;
+    outline: none;
+    border: 0px;
+    background-color: transparent;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    transition-duration: .2s;
+}.btn-restart:hover {
+    transform: translateY(-0.25em);
+}
+
+.btn-arrow-img {
+    width: 30px;
+}
+
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+#btn-delete {
+    z-index: 100;
+    padding: 3px;
+    position: absolute;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
+}

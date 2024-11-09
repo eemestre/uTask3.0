@@ -1,0 +1,89 @@
+.header {
+    width: 100%;
+    height: 80px;
+    z-index: 100;
+    box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.2), 0 1px 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.dark-text {
+    color: #FAFAFA;
+}
+
+.light-text {
+    color: #141414;
+}
+
+.logo-unect {
+    width: 30px;
+}
+
+#btn-mode {
+    cursor: pointer;
+    outline: none;
+    border: 0px;
+    background-color: transparent;
+    padding: 0px;
+    margin: 0px;
+}
+
+#btn-add-task {
+    padding: 0px;
+    margin: 0px;
+    cursor: pointer;
+    outline: none;
+    border: 0px;
+    transition-duration: .3s;
+    background-color: transparent;
+} #btn-add-task:hover {
+    transform: translateY(-0.40em);
+}
+
+.kanban-container {
+    width: 90%;
+    height: 550px;
+    margin-top: 50px;
+    margin-bottom: 70px;
+}
+
+.widget-container {
+    width: 30%;
+    height: 100%;
+}
+
+.widget {
+    width: 100%;
+    height: calc(100% - 30px);
+    border-radius: 20px;
+    box-shadow: inset 0 1px 10px 0 rgba(0, 0, 0, 0.1), inset 0 1px 10px 0 rgba(0, 0, 0, 0.1);
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+}
+
+::-webkit-scrollbar {
+    background-color: transparent;
+    width: 30px;
+}
+
+::-webkit-scrollbar-thumb {
+    border: 10px solid rgba(0, 0, 0, 0);
+    background-clip: padding-box;
+    border-radius: 9999px;
+    background-color: #959595;
+}
+
+::-webkit-scrollbar-button:start:decrement,
+::-webkit-scrollbar-button:end:increment  {
+	display: block;
+}
+
+.kanban-title {
+    font-size: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 6px;
+}

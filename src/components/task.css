@@ -1,6 +1,6 @@
 .task-light {
     width: 90%;
-    min-height: 120px;
+    min-height: auto;
     background-color: #FFFFFF;
     color: #141414;
     border-radius: 20px;
@@ -47,7 +47,7 @@
 }
 
 .task-left {
-    width: 90%;
+    width: 72%;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -56,7 +56,7 @@
 }
 
 .task-right {
-    width: 10%;
+    width: 28%;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -90,6 +90,17 @@
     -webkit-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+}
+
+.extend-descr-text {
+    width: max-content;
+    margin-right: 10px;
+    text-align: start;
 }
 
 .options-img {
@@ -157,9 +168,21 @@
 
 #btn-delete {
     z-index: 100;
-    padding: 3px;
+    padding: 13px;
     position: absolute;
     bottom: 125%;
     left: 50%;
-    margin-left: -80px;
+    margin-left: -90px;
+    margin-bottom: -45PX;
+    width: auto;
+    height: auto;
+    outline: none;
+    border: 0px;
+    border-radius: 6px;
+    box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.2), 0 1px 10px 0 rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    font-size: 16px;
+    transition-duration: .1s;
+} #btn-delete:hover {
+    transform:scale(105%);
 }

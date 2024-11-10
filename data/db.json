@@ -6,47 +6,61 @@
       "email": "eduardomestreg@gmail.com",
       "senha": "temppwd",
       "darkMode": true,
+      "currentTaskId": 32,
+      "tasks": []
+    },
+    {
+      "id": "2d48",
+      "nome": "ibisssssssss",
+      "email": "isamestreg@gmail.com",
+      "senha": "wrong",
+      "darkMode": true,
+      "currentTaskId": 1,
+      "tasks": [
+        {
+          "id": 1,
+          "title": "BRUNO",
+          "descr": "tirar dúvidas!!!!!",
+          "status": "done"
+        }
+      ]
+    },
+    {
+      "id": "0004",
+      "nome": "asd",
+      "email": "asd",
+      "senha": "asd",
+      "darkMode": false,
+      "currentTaskId": 4,
       "tasks": [
         {
           "id": 0,
-          "title": "A fazer!",
+          "title": "Sua primeira task!",
           "descr": "A task mais legal e importante de todas! B)",
           "status": "todo"
         },
         {
           "id": 1,
-          "title": "Fazendo!",
-          "descr": "A task mais legal e importante de todas! B)",
-          "status": "doing"
+          "title": "A",
+          "descr": "",
+          "status": "todo"
         },
         {
           "id": 2,
-          "title": "Feito!",
-          "descr": "A task mais legal e importante de todas! B)",
-          "status": "done"
+          "title": "a",
+          "descr": "",
+          "status": "todo"
         },
         {
           "id": 3,
-          "title": "A fazer!",
-          "descr": "A task mais legal e importante de todas! B)",
+          "title": "a",
+          "descr": "",
           "status": "todo"
         },
         {
           "id": 4,
-          "title": "A fazer!",
-          "descr": "A task mais legal e importante de todas! B)",
-          "status": "todo"
-        },
-        {
-          "id": 5,
-          "title": "A fazer!",
-          "descr": "A task mais legal e importante de todas! B)",
-          "status": "todo"
-        },
-        {
-          "id": 6,
-          "title": "A fazer!",
-          "descr": "A task mais legal e importante de todas! B)",
+          "title": "assd",
+          "descr": "asd",
           "status": "todo"
         }
       ]

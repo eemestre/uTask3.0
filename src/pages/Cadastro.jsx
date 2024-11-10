@@ -52,15 +52,17 @@ function Cadastro() {
     setLoading(true)
 
     const user = {
-      nome,
-      email,
-      senha,
+      "nome": nome,
+      "email": email,
+      "senha": senha,
       "darkMode": false,
+      "currentTaskId": 0,
       "tasks": [
         {
           "id": 0,
           "title": "Sua primeira task!",
-          "descr": "A task mais legal e importante de todas! B)"
+          "descr": "A task mais legal e importante de todas! B)",
+          "status": "todo"
         }
       ]
     }

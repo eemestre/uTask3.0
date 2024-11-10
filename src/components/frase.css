@@ -1,8 +1,9 @@
 .frase-container {
     width: 60%;
-    height: 150px;
+    padding: 20px;
+    height: auto;
     box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.1), 0 1px 10px 0 rgba(0, 0, 0, 0.1);
-    border-radius: 30px;
+    border-radius: 20px;
 }
 
 .text-container {
@@ -12,16 +13,18 @@
     justify-content: center;
 }
 
-.dark-text {
+.frase-dark-text {
+    font-size: 22px;
     color: #FAFAFA;
 }
 
-.light-text {
+.frase-light-text {
+    font-size: 22px;
     color: #141414;
 }
 
 .frase-title {
-    font-size: 24px;
+    font-size: 28px;
     margin-bottom: 10px;
 }
 

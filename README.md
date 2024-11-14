@@ -9,17 +9,17 @@ Projeto  treinee para a Unect jr.
 Após clonar, abrir o terminal na pasta do repositório e instalar as dependências:
 
 ```bash
-  npm i
+npm i
 ```
 
 Rodar a aplicação:
 
 ```bash
-  npm run dev
+npm run dev
 ```
 
 Rodar o servidor do banco de dados .json (em um outro terminal):
 
 ```bash
-  npm run server
+npm run server
 ```

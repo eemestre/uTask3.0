@@ -28,16 +28,19 @@ body {
 .box {
   width: 90%;
   height: 100%;
+  transition-duration: .2s;
 }
 
 .box2 {
   width: 65%;
   height: 100%;
+  transition-duration: .2s;
 }
 
 .box3 {
   width: 95%;
   height: 100%;
+  transition-duration: .2s;
 }
 
 .flex-row {
@@ -63,11 +66,15 @@ body {
 
 .border {
   border: 3px solid green;
-  z-index: 100;
 }
 
 label {
   font-size: 18px;
+}
+
+p {
+  padding: 0px;
+  margin: 0px;
 }
 
 /*button {

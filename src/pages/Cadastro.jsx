@@ -134,7 +134,7 @@ function Cadastro() {
               <div className='input-box flex-row' style={senha != confirmaSenha ? {border: "2px solid #820000", backgroundColor: "#FFE5E5"} : {border: "2px solid #002D6C"}}>
                 <div className='box3 flex-row'>
                   <div className='left'>
-                    <input value={confirmaSenha} name='confirma-senha' className='text-input' type={eyeOpen2 ? "text" : "password"} placeholder='Senha secreta' onChange={(e) => setConfirmaSenha(e.target.value)}/>
+                    <input value={confirmaSenha} id='confirma-senha' className='text-input' type={eyeOpen2 ? "text" : "password"} placeholder='Senha secreta' onChange={(e) => setConfirmaSenha(e.target.value)}/>
                   </div>
                   <div className='right flex-row'>
                     <button className='btn-eye flex-column' onClick={() => setEyeOpen2(eyeOpen2 ? false : true)}>
@@ -149,7 +149,7 @@ function Cadastro() {
           </div>
         </div>
         <hr className='linha1'/>
-        <div className="half flex-column">
+        <div id='img-cadastro' className="half flex-column">
           <img src={CadastroImg} className='img-home' />
         </div>
       </div>

@@ -34,7 +34,7 @@ function Login() {
     <>
       <header/>
       <div className="box flex-row">
-        <div className="half flex-column">
+        <div id='img-login' className="half flex-column">
           <img src={LoginImg} className='img-home' />
         </div>
         <hr className='linha1'/>
@@ -58,7 +58,7 @@ function Login() {
                   </div>
                   <div className='right flex-row'>
                     <button onClick={() => setEyeOpen(eyeOpen ? false : true)} className='btn-eye flex-column'>
-                      <img class='img-eye' src={eyeOpen ? EyeOpen : EyeClosed} />
+                      <img className='img-eye' src={eyeOpen ? EyeOpen : EyeClosed} />
                     </button>
                   </div>
                 </div>

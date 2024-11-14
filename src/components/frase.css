@@ -1,9 +1,20 @@
 .frase-container {
     width: 60%;
+    padding: 30px;
+    height: auto;
+    box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.1), 0 1px 10px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+}
+
+.btn-frase {
+    width: 65%;
     padding: 20px;
     height: auto;
     box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.1), 0 1px 10px 0 rgba(0, 0, 0, 0.1);
     border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    outline: none;
 }
 
 .text-container {
@@ -30,4 +41,61 @@
 
 .bulb {
     width: 40px;
+}
+
+.phrase-popup {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 500;
+    width: 100%;
+    height: 100vh;
+    background-color: #14141466;
+}
+
+.phrase-popup .frase-container {
+    padding: 35px;
+}
+
+.phrase-popup .frase-title {
+    margin-bottom: 10px;
+    width:100%;
+    justify-content: left;
+}
+
+.flex-start {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+}
+
+.flex-end {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+}
+
+#btn-close-frase {
+    width: auto;
+    height: auto;
+    padding: 0px;
+    border: 0px;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+    margin-right: -15px;
+    margin-top: 2px;
+}
+
+@media only screen and (max-width: 1019px) {
+    .frase-title {
+        font-size: 20px;
+        margin-bottom: 0px;
+    }
+
+    .bulb {
+        width: 30px;
+    }
 }

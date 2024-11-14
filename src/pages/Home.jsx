@@ -1,15 +1,17 @@
 import { useFetch } from '../hooks/useFetch'
 import { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom'
+import MediaQuery from 'react-responsive'
 import Frase from '../components/Frase'
-import Task from '../components/Task'
+import Kanban from '../components/Kanban'
+import KanbanPequeno from '../components/KanbanPequeno'
 import LogoUnectWhite from '../assets/logo-unect-branca.svg'
 import LogoUnectBlue from '../assets/logo-unect-azul.svg'
 import BtnLightMode from '../assets/btn-light-mode.svg'
 import BtnDarkMode from '../assets/btn-dark-mode.svg'
-import AddTask from '../assets/add-task.svg'
 import BtnCloseLigth from '../assets/btn-close-light.svg'
 import BtnCloseDark from '../assets/btn-close-dark.svg'
+import Heart from '../assets/favorite.svg'
 import './home.css'
 
 function Home() {
@@ -53,7 +55,6 @@ function Home() {
     const handleChangeStatus = (id, newStatus) => {
         let changedTask = user.tasks.filter((t) => t.id === id);
         changedTask[0].status = newStatus
-        console.log(changedTask)
         const otherTasks = user.tasks.filter((t) => t.id !== id);
         const updatedTasks = [...otherTasks, ...changedTask]
         const update = {
@@ -97,7 +98,7 @@ function Home() {
                             <hr className='linha-nova-task' />
                         </div>
                         <button id='btn-close-add-task' className='prevent-select' onClick={() => {setAddTaskOpen(false)}}>
-                            <img src={user.darkMode ? BtnCloseDark : BtnCloseLigth} style={{width: "40px"}}/>
+                            <img src={user.darkMode ? BtnCloseDark : BtnCloseLigth} style={{width: "30px"}}/>
                         </button>
                         <div className='text-div' style={user.darkMode ? {color: "#FFFFFF"} : {color: "#000000"}}>
                             <label htmlFor="title">Título *</label>
@@ -128,43 +129,29 @@ function Home() {
                     </button>
                 </div>
             </div>
-            <div className='box' style={{marginTop: "50px"}}>
+            <div className='frase-box' style={{marginTop: "75px"}}>
                 <Frase darkMode={user.darkMode}/>
             </div>
-            <div className='kanban-container flex-spaced'>
-                <div id='fazer' className='widget-container'>
-                    <div className={user.darkMode ? "dark-text kanban-title" : "light-text kanban-title"}>
-                        <div>A fazer</div>
-                        <button onClick={() => setAddTaskOpen(true)} id='btn-add-task' className='prevent-select'>
-                            <img src={AddTask} style={{width: "42px"}} />
-                        </button>
+
+            <MediaQuery maxWidth={1019}>
+                <KanbanPequeno user={user} setAddTaskOpen={setAddTaskOpen} handleDelete={handleDelete} handleChangeStatus={handleChangeStatus}></KanbanPequeno>
+            </MediaQuery>
+
+            <MediaQuery minWidth={1020}>
+                <Kanban user={user} setAddTaskOpen={setAddTaskOpen} handleDelete={handleDelete} handleChangeStatus={handleChangeStatus}></Kanban>
+            </MediaQuery>
+
+            <footer className="dark-text" style={user.darkMode ? {backgroundColor: "#111111"} : {backgroundColor: "#114FA7"}}>
+                <div className='box-footer'>
+                    <div className='footer-text'>
+                        <p>© Processo de Trainee <a href="https://unect.com.br" target="_blank" rel="noopener noreferrer" style={{fontWeight: "bold", color: "#FAFAFA", textDecoration: "none"}}>Unect Jr.</a></p>
                     </div>
-                    <div className='widget' style={user.darkMode ? {backgroundColor: "#333333"} : {backgroundColor: "#EEEEEE"}}>
-                        {user && (user.tasks.filter((t) => t.status === "todo")).map((t) => (
-                            <Task {...t} handleDelete={handleDelete} handleChangeStatus={handleChangeStatus} darkMode={user.darkMode} />
-                        ))}
-                    </div>
-                </div>
-                <div id='andamento' className='widget-container'>
-                    <div className={user.darkMode ? "dark-text kanban-title" : "light-text kanban-title"}>Em andamento</div>
-                    <div className='widget' style={user.darkMode ? {backgroundColor: "#333333"} : {backgroundColor: "#EEEEEE"}}>
-                        {user && (user.tasks.filter((t) => t.status === "doing")).map((t) => (
-                            <Task {...t} handleDelete={handleDelete} handleChangeStatus={handleChangeStatus} darkMode={user.darkMode} />
-                        ))}
+                    <div className='footer-text'>
+                        <div>Feito com</div>
+                        <img src={Heart} style={{width: "16px", margin: "5px"}}/>
+                        <p>por <a href="https://www.linkedin.com/in/eemestre/" target="_blank" rel="noopener noreferrer" style={{fontWeight: "bold", color: "#FAFAFA", textDecoration: "none"}}>Mestre</a></p>
                     </div>
                 </div>
-                <div id='feito' className='widget-container'>
-                    <div className={user.darkMode ? "dark-text kanban-title" : "light-text kanban-title"}>Feito</div>
-                    <div className='widget' style={user.darkMode ? {backgroundColor: "#333333"} : {backgroundColor: "#EEEEEE"}}>
-                        {user && (user.tasks.filter((t) => t.status === "done")).map((t) => (
-                            <Task {...t} handleDelete={handleDelete} handleChangeStatus={handleChangeStatus} darkMode={user.darkMode} />
-                        ))}
-                    </div>
-                </div>
-            </div>
-            <footer>
-                <div>Processo treinee</div>
-                <div>feito com amor por Mestre</div>
             </footer>
         </>
     )

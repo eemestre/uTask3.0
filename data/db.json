@@ -6,8 +6,51 @@
       "email": "eduardomestreg@gmail.com",
       "senha": "temppwd",
       "darkMode": true,
-      "currentTaskId": 32,
-      "tasks": []
+      "currentTaskId": 15,
+      "tasks": [
+        {
+          "id": 10,
+          "title": "asdasdsa",
+          "descr": "asdasdsa",
+          "status": "done"
+        },
+        {
+          "id": 14,
+          "title": "teste no coisa pequeno",
+          "descr": "",
+          "status": "done"
+        },
+        {
+          "id": 6,
+          "title": "teste",
+          "descr": "bora billl\n",
+          "status": "doing"
+        },
+        {
+          "id": 13,
+          "title": "Testezadaaaa",
+          "descr": "",
+          "status": "doing"
+        },
+        {
+          "id": 9,
+          "title": "pipipipopopo",
+          "descr": "pneumoultramicroscopicosilicovulcanoconiose",
+          "status": "todo"
+        },
+        {
+          "id": 8,
+          "title": "Teste",
+          "descr": "Teste de descrição de task. Espero q essa porra n quebre pelo amor de deus funciona miserável. Insconstitucionalicimamente misera",
+          "status": "done"
+        },
+        {
+          "id": 15,
+          "title": "aasdasd",
+          "descr": "asdasd",
+          "status": "doing"
+        }
+      ]
     },
     {
       "id": "2d48",
@@ -22,45 +65,11 @@
           "title": "BRUNO",
           "descr": "tirar dúvidas!!!!!",
           "status": "done"
-        }
-      ]
-    },
-    {
-      "id": "0004",
-      "nome": "asd",
-      "email": "asd",
-      "senha": "asd",
-      "darkMode": false,
-      "currentTaskId": 4,
-      "tasks": [
-        {
-          "id": 0,
-          "title": "Sua primeira task!",
-          "descr": "A task mais legal e importante de todas! B)",
-          "status": "todo"
         },
         {
           "id": 1,
-          "title": "A",
-          "descr": "",
-          "status": "todo"
-        },
-        {
-          "id": 2,
-          "title": "a",
-          "descr": "",
-          "status": "todo"
-        },
-        {
-          "id": 3,
-          "title": "a",
-          "descr": "",
-          "status": "todo"
-        },
-        {
-          "id": 4,
-          "title": "assd",
-          "descr": "asd",
+          "title": "INVADIDO HIHIHI",
+          "descr": "pipipipopopo",
           "status": "todo"
         }
       ]

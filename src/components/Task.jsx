@@ -22,23 +22,23 @@ function Task(props) {
 
   return (
     <>
-      <div id={props.id} className={props.darkMode ? "task-dark" : "task-light"} style={extended ? {minHeight: "auto"} : {}} >
+      <div id={props.id} className={props.darkMode ? "task-dark" : "task-light"} style={{minHeight: "auto"}} >
         <div className='box flex-row'>
           <div className='task-left container'>
-            <div className='task-title'>{props.title}</div>
+            <div className='task-title' style={props.status === "done" ? {textDecoration: "line-through"} : {textDecoration: "none"}}>{props.title}</div>
             <div className='task-text'>
               {extended
               ? (<>
                   <button onClick={() => setExtended(false)} className='btn-extend'>
                     <div className='extend-descr-text' style={props.darkMode ? {color: "#5C9DFF"} : {color: "#002D6C"} }>Esconder descrição</div>
-                    <img src={props.darkMode ? BtnExpandLessDark : BtnExpandLessLight} style={{width: "11px"}} />
+                    <img src={props.darkMode ? BtnExpandLessDark : BtnExpandLessLight} style={{width: "10px"}} />
                   </button>
-                  <div style={{marginTop: "10px"}}>{props.descr}</div>
+                  <div style={{marginTop: "10px", minHeight: "27px"}}>{props.descr}</div>
                 </>)
               : (<>
                   <button onClick={() => setExtended(true) & setOptionsOpen(false)} className='btn-extend'>
                     <div className='extend-descr-text'>Ler descrição</div>
-                    <img src={props.darkMode ? BtnExpandMoreDark : BtnExpandMoreLight} style={{width: "11px"}} />
+                    <img src={props.darkMode ? BtnExpandMoreDark : BtnExpandMoreLight} style={{width: "10px"}} />
                   </button>
                 </>)
               }
@@ -46,7 +46,7 @@ function Task(props) {
           </div>
           <div className='task-right'>
             <button id='btn-options' onClick={() => optionsOpen ? setOptionsOpen(false) : setOptionsOpen(true) & setExtended(false)}>
-              <img className='options-img' src={props.darkMode ? OptionsDark : OptionsLight} alt="" />
+              <img className='options-img' src={props.darkMode ? OptionsDark : OptionsLight} />
             </button>
             <div className='popup prevent-select' style={optionsOpen ? {visibility: "visible"} : {visibility: "hidden"}} >
               <button id='btn-delete' className='flex-row box' style={props.darkMode ? {backgroundColor: "#535353"} : {backgroundColor: "#FFFFFF"}} onClick={() => setOptionsOpen(false) & props.handleDelete(props.id)} >
@@ -92,7 +92,3 @@ function Task(props) {
 }
 
 export default Task
-
-
-/*const addedUser = await res.json()
-    setUsers((prevUsers) => [...prevUsers, addedUser])*/

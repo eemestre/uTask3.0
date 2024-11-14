@@ -36,12 +36,16 @@
 }
 
 .task-title {
+    width: 100%;
     font-size: 28px;
     margin-top: 20px;
+    overflow-wrap: break-word;
 }
 
 .task-text {
-    font-size: 20px;
+    width: 100%;
+    overflow-wrap: break-word;
+    font-size: 18px;
     margin-top: 8px;
     margin-bottom: 15px;
 }
@@ -82,7 +86,6 @@
     color: inherit;
     font-size: 20px;
     padding: 0px;
-    margin: 0px;
     cursor: pointer;
     outline: none;
     border: 0px;
@@ -99,19 +102,19 @@
 
 .extend-descr-text {
     width: max-content;
-    margin-right: 10px;
+    margin-right: 6px;
     text-align: start;
+    font-size: 16px;
 }
 
 .options-img {
-    width: 7px;
+    width: 6px;
     transition-duration: .2s;
 }
 
 .btn-next {
     padding: 0px;
     margin: 0px;
-    margin-left: 4px;
     cursor: pointer;
     outline: none;
     border: 0px;
@@ -143,7 +146,6 @@
 .btn-restart {
     padding: 0px;
     margin: 0px;
-    margin-right: 4px;
     cursor: pointer;
     outline: none;
     border: 0px;
@@ -157,7 +159,7 @@
 }
 
 .btn-arrow-img {
-    width: 30px;
+    width: 26px;
 }
 
 .popup {
@@ -168,12 +170,12 @@
 
 #btn-delete {
     z-index: 100;
-    padding: 13px;
+    padding: 11px;
     position: absolute;
     bottom: 125%;
     left: 50%;
-    margin-left: -90px;
-    margin-bottom: -45PX;
+    margin-left: -86px;
+    margin-bottom: -46px;
     width: auto;
     height: auto;
     outline: none;
@@ -185,4 +187,44 @@
     transition-duration: .1s;
 } #btn-delete:hover {
     transform:scale(105%);
+}
+
+::-webkit-scrollbar {
+    background-color: transparent;
+    width: 30px;
+}
+
+::-webkit-scrollbar-thumb {
+    border: 12px solid rgba(0, 0, 0, 0);
+    background-clip: padding-box;
+    border-radius: 9999px;
+    background-color: #959595;
+}
+
+::-webkit-scrollbar-button:start:decrement,
+::-webkit-scrollbar-button:end:increment  {
+	visibility: hidden;
+}
+
+@media only screen and (max-width: 1019px) {
+    .btn-arrow-img {
+        width: 22px;
+    }
+
+    ::-webkit-scrollbar {
+        background-color: transparent;
+        width: 15px;
+    }
+    
+    ::-webkit-scrollbar-thumb {
+        border: 5px solid rgba(0, 0, 0, 0);
+        background-clip: padding-box;
+        border-radius: 9999px;
+        background-color: #959595;
+    }
+
+    .task-light, .task-dark {
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
 }
